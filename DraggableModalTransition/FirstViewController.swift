@@ -15,7 +15,13 @@ class FirstViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.interactionController.setupDragModalAnimation(self, segueIdentifier: "goToSecond")
+//    self.interactionController.setupDragModalAnimation(self, segueIdentifier: "goToSecond")
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+
+    self.view.frame.size.height = self.view.frame.size.height - 49
   }
 
   @IBAction func ShowTapped(_ sender: Any) {

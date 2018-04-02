@@ -45,7 +45,7 @@ class DraggableModalPercentDrivenInteractiveTransition: UIPercentDrivenInteracti
 
     if gesture.state == .began {
 
-      self.fromViewController.performSegue(withIdentifier: "goToSecond", sender: nil)
+      self.fromViewController.performSegue(withIdentifier: self.segueIdentifier, sender: nil)
 
     } else if gesture.state == .changed {
       self.update(percent)

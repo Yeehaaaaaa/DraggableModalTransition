@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u3x-S7-jPD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" id="BYZ-38-t0r" customClass="FirstViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,47 +33,84 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="topRated" id="DnH-G2-iS8"/>
                     <navigationItem key="navigationItem" id="jXg-Lo-Sig"/>
-                    <connections>
-                        <segue destination="JCy-Ip-VfS" kind="presentation" identifier="goToSecond" id="hiU-Fm-SwU"/>
-                    </connections>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999.20000000000005" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1041" y="-430"/>
+        </scene>
+        <!--Bottom View Controller-->
+        <scene sceneID="X7k-g8-QlK">
+            <objects>
+                <viewController storyboardIdentifier="bottom" id="2tv-Oo-g54" customClass="BottomViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHL-aT-ejK" customClass="ClearView" customModule="DraggableModalTransition" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-l2-ZyO" customClass="BottomView" customModule="DraggableModalTransition" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUPI !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-ew-KtO">
+                                        <rect key="frame" x="157.5" y="15" width="59.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xt-v8-VqW">
+                                        <rect key="frame" x="329" y="0.0" width="46" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6xt-v8-VqW" firstAttribute="top" secondItem="gqh-l2-ZyO" secondAttribute="top" id="Ars-U6-vCE"/>
+                                    <constraint firstAttribute="bottom" secondItem="6xt-v8-VqW" secondAttribute="bottom" id="Hfl-sS-eK6"/>
+                                    <constraint firstItem="6wM-ew-KtO" firstAttribute="centerY" secondItem="gqh-l2-ZyO" secondAttribute="centerY" id="QZ3-vx-QYG"/>
+                                    <constraint firstAttribute="trailing" secondItem="6xt-v8-VqW" secondAttribute="trailing" id="pYK-vi-8fc"/>
+                                    <constraint firstAttribute="height" constant="50" id="qyA-6k-6Vk"/>
+                                    <constraint firstItem="6wM-ew-KtO" firstAttribute="centerX" secondItem="gqh-l2-ZyO" secondAttribute="centerX" id="t1C-le-RJD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gqh-l2-ZyO" firstAttribute="trailing" secondItem="cj8-2e-At4" secondAttribute="trailing" id="GPA-El-oPY"/>
+                            <constraint firstItem="gqh-l2-ZyO" firstAttribute="bottom" secondItem="cj8-2e-At4" secondAttribute="bottom" constant="-49" id="WGm-Iz-tbj"/>
+                            <constraint firstItem="gqh-l2-ZyO" firstAttribute="leading" secondItem="cj8-2e-At4" secondAttribute="leading" id="sFC-n1-xxY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cj8-2e-At4"/>
+                    </view>
+                    <connections>
+                        <segue destination="3sH-vQ-nAE" kind="presentation" identifier="goToModal" id="qOH-fQ-pJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6d-cF-bSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="-780.35982008995506"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="72i-So-D4T">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="JCy-Ip-VfS" customClass="SecondViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="JCy-Ip-VfS" customClass="SecondViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uM3-7n-JRh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvu-9L-XGO">
-                                <rect key="frame" x="157" y="318.5" width="60" height="30"/>
-                                <state key="normal" title="DISMISS"/>
-                                <connections>
-                                    <action selector="DismissTapped:" destination="JCy-Ip-VfS" eventType="touchUpInside" id="apa-qn-JSo"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="0.43269601460000001" blue="0.32750791159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="nvu-9L-XGO" firstAttribute="centerY" secondItem="uM3-7n-JRh" secondAttribute="centerY" id="eOQ-5F-1fA"/>
-                            <constraint firstItem="nvu-9L-XGO" firstAttribute="centerX" secondItem="uM3-7n-JRh" secondAttribute="centerX" id="yqf-sD-49p"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cEv-ge-axe"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="lyq-ND-zkW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e65-Wv-Lyq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1041" y="385"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="ES3-fM-ztU">
             <objects>
-                <tabBarController id="u3x-S7-jPD" customClass="MyTabBarController" sceneMemberID="viewController">
+                <tabBarController id="u3x-S7-jPD" customClass="MyTabBarController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xYt-bY-O3l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,6 +120,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HT-Ir-vhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78" y="134"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="7rQ-yT-Yw8">
+            <objects>
+                <viewController id="3sH-vQ-nAE" customClass="ModalViewController" customModule="DraggableModalTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEF-5T-RLi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.52177975585168879" green="1" blue="0.63080916239246787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ytK-2p-yVu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAF-Yd-cvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="1009"/>
         </scene>
     </scenes>
 </document>

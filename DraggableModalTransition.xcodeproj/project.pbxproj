@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76D4A12345E7212C685C302A /* Pods_DraggableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0453FD4BB8868D509900B9 /* Pods_DraggableModalTransition.framework */; };
 		8E256F0920713E2B003C54BF /* DraggableModalGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E256F0820713E2B003C54BF /* DraggableModalGestureRecognizerDelegate.swift */; };
 		8E256F0B2071460A003C54BF /* DragModalTansitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E256F0A2071460A003C54BF /* DragModalTansitioningDelegate.swift */; };
 		8E256F0D2071474C003C54BF /* DragModalAnimatedTansitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E256F0C2071474C003C54BF /* DragModalAnimatedTansitioning.swift */; };
+		8E256F1120728B14003C54BF /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E256F1020728B14003C54BF /* MyTabBarController.swift */; };
+		8E3520412072947600CD1AC6 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3520402072947600CD1AC6 /* BottomViewController.swift */; };
+		8E3520432072961600CD1AC6 /* ClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3520422072961600CD1AC6 /* ClearView.swift */; };
+		8E3520452072968400CD1AC6 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3520442072968400CD1AC6 /* BottomView.swift */; };
+		8E35204720729D0600CD1AC6 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35204620729D0600CD1AC6 /* ModalViewController.swift */; };
 		8E6DF81F207115140050013D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DF81E207115140050013D /* AppDelegate.swift */; };
 		8E6DF821207115140050013D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DF820207115140050013D /* FirstViewController.swift */; };
 		8E6DF824207115140050013D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6DF822207115140050013D /* Main.storyboard */; };
@@ -20,9 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0F840A26EE721786FAA6EF /* Pods-DraggableModalTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableModalTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-DraggableModalTransition/Pods-DraggableModalTransition.release.xcconfig"; sourceTree = "<group>"; };
 		8E256F0820713E2B003C54BF /* DraggableModalGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableModalGestureRecognizerDelegate.swift; sourceTree = "<group>"; };
 		8E256F0A2071460A003C54BF /* DragModalTansitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragModalTansitioningDelegate.swift; sourceTree = "<group>"; };
 		8E256F0C2071474C003C54BF /* DragModalAnimatedTansitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragModalAnimatedTansitioning.swift; sourceTree = "<group>"; };
+		8E256F1020728B14003C54BF /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		8E3520402072947600CD1AC6 /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		8E3520422072961600CD1AC6 /* ClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearView.swift; sourceTree = "<group>"; };
+		8E3520442072968400CD1AC6 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		8E35204620729D0600CD1AC6 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		8E6DF81B207115140050013D /* DraggableModalTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableModalTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6DF81E207115140050013D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E6DF820207115140050013D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +44,8 @@
 		8E6DF82A207115140050013D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6DF830207115520050013D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8E6DF83720711A220050013D /* DraggableModalPercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableModalPercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
+		AC4616488DC09A7A5DE76B76 /* Pods-DraggableModalTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableModalTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DraggableModalTransition/Pods-DraggableModalTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0453FD4BB8868D509900B9 /* Pods_DraggableModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggableModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D4A12345E7212C685C302A /* Pods_DraggableModalTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C6B2E7DD8DAAF1604E3590 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC4616488DC09A7A5DE76B76 /* Pods-DraggableModalTransition.debug.xcconfig */,
+				0F0F840A26EE721786FAA6EF /* Pods-DraggableModalTransition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B796FBE8C9B54887884A233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0453FD4BB8868D509900B9 /* Pods_DraggableModalTransition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E6DF812207115140050013D = {
 			isa = PBXGroup;
 			children = (
 				8E6DF81D207115140050013D /* DraggableModalTransition */,
 				8E6DF81C207115140050013D /* Products */,
+				21C6B2E7DD8DAAF1604E3590 /* Pods */,
+				6B796FBE8C9B54887884A233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +103,12 @@
 				8E6DF81E207115140050013D /* AppDelegate.swift */,
 				8E6DF820207115140050013D /* FirstViewController.swift */,
 				8E6DF830207115520050013D /* SecondViewController.swift */,
+				8E3520402072947600CD1AC6 /* BottomViewController.swift */,
+				8E3520422072961600CD1AC6 /* ClearView.swift */,
+				8E3520442072968400CD1AC6 /* BottomView.swift */,
+				8E35204620729D0600CD1AC6 /* ModalViewController.swift */,
 				8E6DF822207115140050013D /* Main.storyboard */,
+				8E256F1020728B14003C54BF /* MyTabBarController.swift */,
 				8E6DF825207115140050013D /* Assets.xcassets */,
 				8E6DF827207115140050013D /* LaunchScreen.storyboard */,
 				8E6DF82A207115140050013D /* Info.plist */,
@@ -94,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E6DF82D207115140050013D /* Build configuration list for PBXNativeTarget "DraggableModalTransition" */;
 			buildPhases = (
+				ABDFDCF646EDAA72B7AD5A68 /* [CP] Check Pods Manifest.lock */,
 				8E6DF817207115140050013D /* Sources */,
 				8E6DF818207115140050013D /* Frameworks */,
 				8E6DF819207115140050013D /* Resources */,
+				287F6230F44F8DDF418AB097 /* [CP] Embed Pods Frameworks */,
+				04EC87651B2A073F4C5B2DE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,15 +196,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04EC87651B2A073F4C5B2DE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggableModalTransition/Pods-DraggableModalTransition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		287F6230F44F8DDF418AB097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DraggableModalTransition/Pods-DraggableModalTransition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggableModalTransition/Pods-DraggableModalTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDFDCF646EDAA72B7AD5A68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DraggableModalTransition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E6DF817207115140050013D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8E6DF831207115520050013D /* SecondViewController.swift in Sources */,
+				8E256F1120728B14003C54BF /* MyTabBarController.swift in Sources */,
 				8E6DF821207115140050013D /* FirstViewController.swift in Sources */,
 				8E6DF81F207115140050013D /* AppDelegate.swift in Sources */,
+				8E35204720729D0600CD1AC6 /* ModalViewController.swift in Sources */,
+				8E3520452072968400CD1AC6 /* BottomView.swift in Sources */,
 				8E256F0920713E2B003C54BF /* DraggableModalGestureRecognizerDelegate.swift in Sources */,
+				8E3520432072961600CD1AC6 /* ClearView.swift in Sources */,
+				8E3520412072947600CD1AC6 /* BottomViewController.swift in Sources */,
 				8E256F0D2071474C003C54BF /* DragModalAnimatedTansitioning.swift in Sources */,
 				8E6DF83820711A220050013D /* DraggableModalPercentDrivenInteractiveTransition.swift in Sources */,
 				8E256F0B2071460A003C54BF /* DragModalTansitioningDelegate.swift in Sources */,
@@ -300,6 +403,7 @@
 		};
 		8E6DF82E207115140050013D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4616488DC09A7A5DE76B76 /* Pods-DraggableModalTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +419,7 @@
 		};
 		8E6DF82F207115140050013D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0F840A26EE721786FAA6EF /* Pods-DraggableModalTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
